@@ -1,0 +1,158 @@
+{
+  "n_samples": 80,
+  "mcnemar": {
+    "direct vs cot": {
+      "hanya_menang_A": 0,
+      "hanya_menang_B": 4,
+      "p": 0.125,
+      "p_holm": 0.375,
+      "signifikan_5persen": false
+    },
+    "direct vs structured": {
+      "hanya_menang_A": 1,
+      "hanya_menang_B": 10,
+      "p": 0.01172,
+      "p_holm": 0.05859,
+      "signifikan_5persen": false
+    },
+    "direct vs enhanced": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 17,
+      "p": 0.00073,
+      "p_holm": 0.00437,
+      "signifikan_5persen": true
+    },
+    "cot vs structured": {
+      "hanya_menang_A": 1,
+      "hanya_menang_B": 6,
+      "p": 0.125,
+      "p_holm": 0.375,
+      "signifikan_5persen": false
+    },
+    "cot vs enhanced": {
+      "hanya_menang_A": 3,
+      "hanya_menang_B": 14,
+      "p": 0.01273,
+      "p_holm": 0.05859,
+      "signifikan_5persen": false
+    },
+    "structured vs enhanced": {
+      "hanya_menang_A": 4,
+      "hanya_menang_B": 10,
+      "p": 0.17957,
+      "p_holm": 0.375,
+      "signifikan_5persen": false
+    }
+  },
+  "latensi": {
+    "direct": {
+      "detik_rata2": 0.69,
+      "detik_median": 0.5,
+      "detik_total": 55.0,
+      "panjang_raw_rata2": 107
+    },
+    "cot": {
+      "detik_rata2": 2.92,
+      "detik_median": 2.8,
+      "detik_total": 233.5,
+      "panjang_raw_rata2": 1504
+    },
+    "structured": {
+      "detik_rata2": 0.82,
+      "detik_median": 0.7,
+      "detik_total": 65.6,
+      "panjang_raw_rata2": 200
+    },
+    "enhanced": {
+      "detik_rata2": 0.7,
+      "detik_median": 0.6,
+      "detik_total": 56.4,
+      "panjang_raw_rata2": 146
+    }
+  },
+  "stabilitas": {
+    "per_provider": {
+      "direct": {
+        "Alibaba": {
+          "n": 70,
+          "akurasi": 0.5143,
+          "kelas_tidak_terwakili": []
+        },
+        "Parasail": {
+          "n": 10,
+          "akurasi": 0.3,
+          "kelas_tidak_terwakili": [
+            "Purple Blotch",
+            "Rust"
+          ]
+        }
+      },
+      "cot": {
+        "Alibaba": {
+          "n": 57,
+          "akurasi": 0.4211,
+          "kelas_tidak_terwakili": []
+        },
+        "Parasail": {
+          "n": 23,
+          "akurasi": 0.8261,
+          "kelas_tidak_terwakili": [
+            "Rust"
+          ]
+        }
+      },
+      "structured": {
+        "Alibaba": {
+          "n": 65,
+          "akurasi": 0.5231,
+          "kelas_tidak_terwakili": []
+        },
+        "Parasail": {
+          "n": 15,
+          "akurasi": 0.9333,
+          "kelas_tidak_terwakili": [
+            "Downy Mildew",
+            "Rust"
+          ]
+        }
+      },
+      "enhanced": {
+        "Alibaba": {
+          "n": 68,
+          "akurasi": 0.6324,
+          "kelas_tidak_terwakili": []
+        },
+        "Parasail": {
+          "n": 12,
+          "akurasi": 0.9167,
+          "kelas_tidak_terwakili": [
+            "Downy Mildew",
+            "Rust"
+          ]
+        }
+      }
+    },
+    "antar_run": {
+      "direct": {
+        "berubah": 1,
+        "dari": 80,
+        "stabil": 0.9875
+      },
+      "cot": {
+        "berubah": 8,
+        "dari": 80,
+        "stabil": 0.9
+      },
+      "structured": {
+        "berubah": 2,
+        "dari": 80,
+        "stabil": 0.975
+      },
+      "enhanced": {
+        "berubah": 1,
+        "dari": 80,
+        "stabil": 0.9875
+      }
+    }
+  }
+}

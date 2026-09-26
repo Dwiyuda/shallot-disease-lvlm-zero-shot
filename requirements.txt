@@ -1,0 +1,21 @@
+# Versi dikunci (==) agar eksperimen bisa direplikasi persis. Angka di bawah
+# adalah versi yang benar-benar dipakai pada run yang dilaporkan di penelitian.
+# Jangan longgarkan ke >= tanpa menjalankan ulang eksperimen.
+
+# ── Jalur utama: inferensi via OpenRouter + evaluasi ─────────────────────────
+openai==2.50.0
+python-dotenv==1.2.2
+Pillow==12.1.1
+
+# Visualisasi (menarik numpy & pandas secara transitif)
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# ── Catatan ──────────────────────────────────────────────────────────────────
+# Dependensi model lokal (torch, transformers, bitsandbytes, accelerate,
+# qwen-vl-utils) sudah tidak diperlukan: kode jalur lokal dihapus dari working
+# tree dan tersimpan di commit 43ccb39 (lihat README, bagian Keterbatasan).
+#
+# scikit-learn & tqdm sengaja dihapus: tidak diimpor kode mana pun. Metrik
+# dihitung sendiri di src/evaluation/metrics.py dan uji McNemar memakai
+# math.comb dari stdlib, jadi keduanya hanya menambah beban instalasi.

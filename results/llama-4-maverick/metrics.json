@@ -1,0 +1,1572 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "n_samples": 110,
+  "dedup": {
+    "n_raw": 110,
+    "n_duplicate_removed": 0,
+    "method": "md5 isi file; salinan pertama (urutan nama) dipertahankan"
+  },
+  "catatan_split": "dev = dasar pemilihan prompt; test = angka final yang dilaporkan",
+  "split": {
+    "all": {
+      "n_samples": 110,
+      "per_prompt": {
+        "direct": {
+          "accuracy": 0.7455,
+          "macro_precision": 0.7713,
+          "macro_recall": 0.7455,
+          "macro_f1": 0.7375,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.6957,
+              "recall": 0.7273,
+              "f1": 0.7111,
+              "support": 22
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.5588,
+              "recall": 0.8636,
+              "f1": 0.6786,
+              "support": 22
+            },
+            "Downy Mildew": {
+              "precision": 0.7273,
+              "recall": 0.3636,
+              "f1": 0.4848,
+              "support": 22
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.8182,
+              "f1": 0.9,
+              "support": 22
+            },
+            "Healthy Leaf": {
+              "precision": 0.875,
+              "recall": 0.9545,
+              "f1": 0.913,
+              "support": 22
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 16,
+              "Botrytis Leaf Blight": 6,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 19,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 4,
+              "Botrytis Leaf Blight": 8,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 8,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 3,
+              "Rust": 18,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 21,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 110,
+          "n_unknown": 0
+        },
+        "cot": {
+          "accuracy": 0.7273,
+          "macro_precision": 0.7713,
+          "macro_recall": 0.7273,
+          "macro_f1": 0.7261,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7895,
+              "recall": 0.6818,
+              "f1": 0.7317,
+              "support": 22
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.4872,
+              "recall": 0.8636,
+              "f1": 0.623,
+              "support": 22
+            },
+            "Downy Mildew": {
+              "precision": 0.6667,
+              "recall": 0.3636,
+              "f1": 0.4706,
+              "support": 22
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.7727,
+              "f1": 0.8718,
+              "support": 22
+            },
+            "Healthy Leaf": {
+              "precision": 0.913,
+              "recall": 0.9545,
+              "f1": 0.9333,
+              "support": 22
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 15,
+              "Botrytis Leaf Blight": 7,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 19,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 11,
+              "Healthy Leaf": 1,
+              "Downy Mildew": 8,
+              "Purple Blotch": 2,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 2,
+              "Rust": 17,
+              "Healthy Leaf": 1,
+              "Downy Mildew": 1,
+              "Botrytis Leaf Blight": 1
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 21,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 110,
+          "n_unknown": 0
+        },
+        "structured": {
+          "accuracy": 0.7,
+          "macro_precision": 0.7284,
+          "macro_recall": 0.7,
+          "macro_f1": 0.6928,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.6154,
+              "recall": 0.7273,
+              "f1": 0.6667,
+              "support": 22
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.5152,
+              "recall": 0.7727,
+              "f1": 0.6182,
+              "support": 22
+            },
+            "Downy Mildew": {
+              "precision": 0.6364,
+              "recall": 0.3182,
+              "f1": 0.4242,
+              "support": 22
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.7273,
+              "f1": 0.8421,
+              "support": 22
+            },
+            "Healthy Leaf": {
+              "precision": 0.875,
+              "recall": 0.9545,
+              "f1": 0.913,
+              "support": 22
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 16,
+              "Botrytis Leaf Blight": 6,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Downy Mildew": 4,
+              "Botrytis Leaf Blight": 17,
+              "Purple Blotch": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 4,
+              "Botrytis Leaf Blight": 9,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 7,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 5,
+              "Rust": 16,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 21,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 110,
+          "n_unknown": 0
+        },
+        "enhanced": {
+          "accuracy": 0.7636,
+          "macro_precision": 0.781,
+          "macro_recall": 0.7636,
+          "macro_f1": 0.7647,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7619,
+              "recall": 0.7273,
+              "f1": 0.7442,
+              "support": 22
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.72,
+              "recall": 0.8182,
+              "f1": 0.766,
+              "support": 22
+            },
+            "Downy Mildew": {
+              "precision": 0.5833,
+              "recall": 0.6364,
+              "f1": 0.6087,
+              "support": 22
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.6818,
+              "f1": 0.8108,
+              "support": 22
+            },
+            "Healthy Leaf": {
+              "precision": 0.84,
+              "recall": 0.9545,
+              "f1": 0.8936,
+              "support": 22
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 16,
+              "Downy Mildew": 4,
+              "Botrytis Leaf Blight": 2,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 18,
+              "Downy Mildew": 4,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 2,
+              "Botrytis Leaf Blight": 3,
+              "Healthy Leaf": 3,
+              "Downy Mildew": 14,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 3,
+              "Rust": 15,
+              "Downy Mildew": 2,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 1
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 21,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 110,
+          "n_unknown": 0
+        },
+        "enhanced_v2": {
+          "accuracy": 0.7182,
+          "macro_precision": 0.7553,
+          "macro_recall": 0.7182,
+          "macro_f1": 0.7171,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7368,
+              "recall": 0.6364,
+              "f1": 0.6829,
+              "support": 22
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.6129,
+              "recall": 0.8636,
+              "f1": 0.717,
+              "support": 22
+            },
+            "Downy Mildew": {
+              "precision": 0.619,
+              "recall": 0.5909,
+              "f1": 0.6047,
+              "support": 22
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.5455,
+              "f1": 0.7059,
+              "support": 22
+            },
+            "Healthy Leaf": {
+              "precision": 0.8077,
+              "recall": 0.9545,
+              "f1": 0.875,
+              "support": 22
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 14,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 4,
+              "Downy Mildew": 2,
+              "UNKNOWN": 1,
+              "Rust": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 19,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 3,
+              "Botrytis Leaf Blight": 4,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 13,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 2,
+              "Rust": 12,
+              "Downy Mildew": 3,
+              "Healthy Leaf": 2,
+              "Botrytis Leaf Blight": 3
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 21,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 110,
+          "n_unknown": 1
+        }
+      }
+    },
+    "dev": {
+      "n_samples": 30,
+      "per_prompt": {
+        "direct": {
+          "accuracy": 0.8667,
+          "macro_precision": 0.9,
+          "macro_recall": 0.8667,
+          "macro_f1": 0.8429,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571,
+              "support": 6
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571,
+              "support": 6
+            },
+            "Downy Mildew": {
+              "precision": 1.0,
+              "recall": 0.3333,
+              "f1": 0.5,
+              "support": 6
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "Healthy Leaf": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 6,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 6,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 2,
+              "Downy Mildew": 2,
+              "Purple Blotch": 2,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Rust": {
+              "Rust": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Healthy Leaf": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 30,
+          "n_unknown": 0
+        },
+        "cot": {
+          "accuracy": 0.8333,
+          "macro_precision": 0.85,
+          "macro_recall": 0.8333,
+          "macro_f1": 0.8285,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.8333,
+              "recall": 0.8333,
+              "f1": 0.8333,
+              "support": 6
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.6667,
+              "recall": 1.0,
+              "f1": 0.8,
+              "support": 6
+            },
+            "Downy Mildew": {
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6,
+              "support": 6
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.8333,
+              "f1": 0.9091,
+              "support": 6
+            },
+            "Healthy Leaf": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 5,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 6,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 2,
+              "Downy Mildew": 3,
+              "Purple Blotch": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Rust": {
+              "Rust": 5,
+              "Downy Mildew": 1,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Healthy Leaf": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 30,
+          "n_unknown": 0
+        },
+        "structured": {
+          "accuracy": 0.7667,
+          "macro_precision": 0.7873,
+          "macro_recall": 0.7667,
+          "macro_f1": 0.7579,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7143,
+              "recall": 0.8333,
+              "f1": 0.7692,
+              "support": 6
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.5556,
+              "recall": 0.8333,
+              "f1": 0.6667,
+              "support": 6
+            },
+            "Downy Mildew": {
+              "precision": 0.6667,
+              "recall": 0.3333,
+              "f1": 0.4444,
+              "support": 6
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.8333,
+              "f1": 0.9091,
+              "support": 6
+            },
+            "Healthy Leaf": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 5,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Downy Mildew": 1,
+              "Botrytis Leaf Blight": 5,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 3,
+              "Downy Mildew": 2,
+              "Purple Blotch": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Rust": {
+              "Rust": 5,
+              "Purple Blotch": 1,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Healthy Leaf": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 30,
+          "n_unknown": 0
+        },
+        "enhanced": {
+          "accuracy": 0.8667,
+          "macro_precision": 0.8857,
+          "macro_recall": 0.8667,
+          "macro_f1": 0.8713,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 1.0,
+              "recall": 0.8333,
+              "f1": 0.9091,
+              "support": 6
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.7143,
+              "recall": 0.8333,
+              "f1": 0.7692,
+              "support": 6
+            },
+            "Downy Mildew": {
+              "precision": 0.7143,
+              "recall": 0.8333,
+              "f1": 0.7692,
+              "support": 6
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.8333,
+              "f1": 0.9091,
+              "support": 6
+            },
+            "Healthy Leaf": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 5,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 5,
+              "Downy Mildew": 1,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 5,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Rust": {
+              "Rust": 5,
+              "Downy Mildew": 1,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Healthy Leaf": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 30,
+          "n_unknown": 0
+        },
+        "enhanced_v2": {
+          "accuracy": 0.7667,
+          "macro_precision": 0.8183,
+          "macro_recall": 0.7667,
+          "macro_f1": 0.7816,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.8,
+              "recall": 0.6667,
+              "f1": 0.7273,
+              "support": 6
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.625,
+              "recall": 0.8333,
+              "f1": 0.7143,
+              "support": 6
+            },
+            "Downy Mildew": {
+              "precision": 0.6667,
+              "recall": 0.6667,
+              "f1": 0.6667,
+              "support": 6
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.6667,
+              "f1": 0.8,
+              "support": 6
+            },
+            "Healthy Leaf": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 4,
+              "UNKNOWN": 1,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 5,
+              "Downy Mildew": 1,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 4,
+              "Purple Blotch": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Rust": {
+              "Rust": 4,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 1,
+              "Purple Blotch": 0,
+              "Healthy Leaf": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 6,
+              "Purple Blotch": 0,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 30,
+          "n_unknown": 1
+        }
+      }
+    },
+    "test": {
+      "n_samples": 80,
+      "per_prompt": {
+        "direct": {
+          "accuracy": 0.7,
+          "macro_precision": 0.7333,
+          "macro_recall": 0.7,
+          "macro_f1": 0.6967,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.6667,
+              "recall": 0.625,
+              "f1": 0.6452,
+              "support": 16
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.5,
+              "recall": 0.8125,
+              "f1": 0.619,
+              "support": 16
+            },
+            "Downy Mildew": {
+              "precision": 0.6667,
+              "recall": 0.375,
+              "f1": 0.48,
+              "support": 16
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571,
+              "support": 16
+            },
+            "Healthy Leaf": {
+              "precision": 0.8333,
+              "recall": 0.9375,
+              "f1": 0.8824,
+              "support": 16
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 10,
+              "Botrytis Leaf Blight": 6,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 13,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 2,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 6,
+              "Botrytis Leaf Blight": 6,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 3,
+              "Rust": 12,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 15,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 80,
+          "n_unknown": 0
+        },
+        "cot": {
+          "accuracy": 0.6875,
+          "macro_precision": 0.742,
+          "macro_recall": 0.6875,
+          "macro_f1": 0.6876,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7692,
+              "recall": 0.625,
+              "f1": 0.6897,
+              "support": 16
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.4333,
+              "recall": 0.8125,
+              "f1": 0.5652,
+              "support": 16
+            },
+            "Downy Mildew": {
+              "precision": 0.625,
+              "recall": 0.3125,
+              "f1": 0.4167,
+              "support": 16
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571,
+              "support": 16
+            },
+            "Healthy Leaf": {
+              "precision": 0.8824,
+              "recall": 0.9375,
+              "f1": 0.9091,
+              "support": 16
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 10,
+              "Botrytis Leaf Blight": 6,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 13,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Botrytis Leaf Blight": 9,
+              "Healthy Leaf": 1,
+              "Downy Mildew": 5,
+              "Purple Blotch": 1,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 2,
+              "Rust": 12,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 1,
+              "Downy Mildew": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 15,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 80,
+          "n_unknown": 0
+        },
+        "structured": {
+          "accuracy": 0.675,
+          "macro_precision": 0.7075,
+          "macro_recall": 0.675,
+          "macro_f1": 0.6685,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.5789,
+              "recall": 0.6875,
+              "f1": 0.6286,
+              "support": 16
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.5,
+              "recall": 0.75,
+              "f1": 0.6,
+              "support": 16
+            },
+            "Downy Mildew": {
+              "precision": 0.625,
+              "recall": 0.3125,
+              "f1": 0.4167,
+              "support": 16
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.6875,
+              "f1": 0.8148,
+              "support": 16
+            },
+            "Healthy Leaf": {
+              "precision": 0.8333,
+              "recall": 0.9375,
+              "f1": 0.8824,
+              "support": 16
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 11,
+              "Botrytis Leaf Blight": 5,
+              "Downy Mildew": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Downy Mildew": 3,
+              "Botrytis Leaf Blight": 12,
+              "Purple Blotch": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 3,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 5,
+              "Botrytis Leaf Blight": 6,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 4,
+              "Rust": 11,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 0,
+              "Downy Mildew": 0
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 15,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 80,
+          "n_unknown": 0
+        },
+        "enhanced": {
+          "accuracy": 0.725,
+          "macro_precision": 0.7457,
+          "macro_recall": 0.725,
+          "macro_f1": 0.7248,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.6875,
+              "recall": 0.6875,
+              "f1": 0.6875,
+              "support": 16
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.7222,
+              "recall": 0.8125,
+              "f1": 0.7647,
+              "support": 16
+            },
+            "Downy Mildew": {
+              "precision": 0.5294,
+              "recall": 0.5625,
+              "f1": 0.5455,
+              "support": 16
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.625,
+              "f1": 0.7692,
+              "support": 16
+            },
+            "Healthy Leaf": {
+              "precision": 0.7895,
+              "recall": 0.9375,
+              "f1": 0.8571,
+              "support": 16
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 11,
+              "Downy Mildew": 4,
+              "Botrytis Leaf Blight": 1,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 13,
+              "Downy Mildew": 3,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 2,
+              "Healthy Leaf": 3,
+              "Downy Mildew": 9,
+              "Botrytis Leaf Blight": 2,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 3,
+              "Rust": 10,
+              "Downy Mildew": 1,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 1
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 15,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 80,
+          "n_unknown": 0
+        },
+        "enhanced_v2": {
+          "accuracy": 0.7,
+          "macro_precision": 0.7346,
+          "macro_recall": 0.7,
+          "macro_f1": 0.6931,
+          "per_class": {
+            "Purple Blotch": {
+              "precision": 0.7143,
+              "recall": 0.625,
+              "f1": 0.6667,
+              "support": 16
+            },
+            "Botrytis Leaf Blight": {
+              "precision": 0.6087,
+              "recall": 0.875,
+              "f1": 0.7179,
+              "support": 16
+            },
+            "Downy Mildew": {
+              "precision": 0.6,
+              "recall": 0.5625,
+              "f1": 0.5806,
+              "support": 16
+            },
+            "Rust": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6667,
+              "support": 16
+            },
+            "Healthy Leaf": {
+              "precision": 0.75,
+              "recall": 0.9375,
+              "f1": 0.8333,
+              "support": 16
+            }
+          },
+          "confusion_matrix": {
+            "Purple Blotch": {
+              "Purple Blotch": 10,
+              "Healthy Leaf": 1,
+              "Botrytis Leaf Blight": 3,
+              "Downy Mildew": 2,
+              "Rust": 0
+            },
+            "Botrytis Leaf Blight": {
+              "Botrytis Leaf Blight": 14,
+              "Downy Mildew": 2,
+              "Purple Blotch": 0,
+              "Rust": 0,
+              "Healthy Leaf": 0
+            },
+            "Downy Mildew": {
+              "Purple Blotch": 2,
+              "Healthy Leaf": 2,
+              "Downy Mildew": 9,
+              "Botrytis Leaf Blight": 3,
+              "Rust": 0
+            },
+            "Rust": {
+              "Purple Blotch": 2,
+              "Rust": 8,
+              "Downy Mildew": 2,
+              "Healthy Leaf": 2,
+              "Botrytis Leaf Blight": 2
+            },
+            "Healthy Leaf": {
+              "Healthy Leaf": 15,
+              "Botrytis Leaf Blight": 1,
+              "Purple Blotch": 0,
+              "Downy Mildew": 0,
+              "Rust": 0
+            }
+          },
+          "n_samples": 80,
+          "n_unknown": 0
+        }
+      }
+    }
+  },
+  "per_prompt": {
+    "direct": {
+      "accuracy": 0.7455,
+      "macro_precision": 0.7713,
+      "macro_recall": 0.7455,
+      "macro_f1": 0.7375,
+      "per_class": {
+        "Purple Blotch": {
+          "precision": 0.6957,
+          "recall": 0.7273,
+          "f1": 0.7111,
+          "support": 22
+        },
+        "Botrytis Leaf Blight": {
+          "precision": 0.5588,
+          "recall": 0.8636,
+          "f1": 0.6786,
+          "support": 22
+        },
+        "Downy Mildew": {
+          "precision": 0.7273,
+          "recall": 0.3636,
+          "f1": 0.4848,
+          "support": 22
+        },
+        "Rust": {
+          "precision": 1.0,
+          "recall": 0.8182,
+          "f1": 0.9,
+          "support": 22
+        },
+        "Healthy Leaf": {
+          "precision": 0.875,
+          "recall": 0.9545,
+          "f1": 0.913,
+          "support": 22
+        }
+      },
+      "confusion_matrix": {
+        "Purple Blotch": {
+          "Purple Blotch": 16,
+          "Botrytis Leaf Blight": 6,
+          "Downy Mildew": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Botrytis Leaf Blight": {
+          "Botrytis Leaf Blight": 19,
+          "Downy Mildew": 3,
+          "Purple Blotch": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Downy Mildew": {
+          "Purple Blotch": 4,
+          "Botrytis Leaf Blight": 8,
+          "Healthy Leaf": 2,
+          "Downy Mildew": 8,
+          "Rust": 0
+        },
+        "Rust": {
+          "Purple Blotch": 3,
+          "Rust": 18,
+          "Healthy Leaf": 1,
+          "Botrytis Leaf Blight": 0,
+          "Downy Mildew": 0
+        },
+        "Healthy Leaf": {
+          "Healthy Leaf": 21,
+          "Botrytis Leaf Blight": 1,
+          "Purple Blotch": 0,
+          "Downy Mildew": 0,
+          "Rust": 0
+        }
+      },
+      "n_samples": 110,
+      "n_unknown": 0
+    },
+    "cot": {
+      "accuracy": 0.7273,
+      "macro_precision": 0.7713,
+      "macro_recall": 0.7273,
+      "macro_f1": 0.7261,
+      "per_class": {
+        "Purple Blotch": {
+          "precision": 0.7895,
+          "recall": 0.6818,
+          "f1": 0.7317,
+          "support": 22
+        },
+        "Botrytis Leaf Blight": {
+          "precision": 0.4872,
+          "recall": 0.8636,
+          "f1": 0.623,
+          "support": 22
+        },
+        "Downy Mildew": {
+          "precision": 0.6667,
+          "recall": 0.3636,
+          "f1": 0.4706,
+          "support": 22
+        },
+        "Rust": {
+          "precision": 1.0,
+          "recall": 0.7727,
+          "f1": 0.8718,
+          "support": 22
+        },
+        "Healthy Leaf": {
+          "precision": 0.913,
+          "recall": 0.9545,
+          "f1": 0.9333,
+          "support": 22
+        }
+      },
+      "confusion_matrix": {
+        "Purple Blotch": {
+          "Purple Blotch": 15,
+          "Botrytis Leaf Blight": 7,
+          "Downy Mildew": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Botrytis Leaf Blight": {
+          "Botrytis Leaf Blight": 19,
+          "Downy Mildew": 3,
+          "Purple Blotch": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Downy Mildew": {
+          "Botrytis Leaf Blight": 11,
+          "Healthy Leaf": 1,
+          "Downy Mildew": 8,
+          "Purple Blotch": 2,
+          "Rust": 0
+        },
+        "Rust": {
+          "Purple Blotch": 2,
+          "Rust": 17,
+          "Healthy Leaf": 1,
+          "Downy Mildew": 1,
+          "Botrytis Leaf Blight": 1
+        },
+        "Healthy Leaf": {
+          "Healthy Leaf": 21,
+          "Botrytis Leaf Blight": 1,
+          "Purple Blotch": 0,
+          "Downy Mildew": 0,
+          "Rust": 0
+        }
+      },
+      "n_samples": 110,
+      "n_unknown": 0
+    },
+    "structured": {
+      "accuracy": 0.7,
+      "macro_precision": 0.7284,
+      "macro_recall": 0.7,
+      "macro_f1": 0.6928,
+      "per_class": {
+        "Purple Blotch": {
+          "precision": 0.6154,
+          "recall": 0.7273,
+          "f1": 0.6667,
+          "support": 22
+        },
+        "Botrytis Leaf Blight": {
+          "precision": 0.5152,
+          "recall": 0.7727,
+          "f1": 0.6182,
+          "support": 22
+        },
+        "Downy Mildew": {
+          "precision": 0.6364,
+          "recall": 0.3182,
+          "f1": 0.4242,
+          "support": 22
+        },
+        "Rust": {
+          "precision": 1.0,
+          "recall": 0.7273,
+          "f1": 0.8421,
+          "support": 22
+        },
+        "Healthy Leaf": {
+          "precision": 0.875,
+          "recall": 0.9545,
+          "f1": 0.913,
+          "support": 22
+        }
+      },
+      "confusion_matrix": {
+        "Purple Blotch": {
+          "Purple Blotch": 16,
+          "Botrytis Leaf Blight": 6,
+          "Downy Mildew": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Botrytis Leaf Blight": {
+          "Downy Mildew": 4,
+          "Botrytis Leaf Blight": 17,
+          "Purple Blotch": 1,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Downy Mildew": {
+          "Purple Blotch": 4,
+          "Botrytis Leaf Blight": 9,
+          "Healthy Leaf": 2,
+          "Downy Mildew": 7,
+          "Rust": 0
+        },
+        "Rust": {
+          "Purple Blotch": 5,
+          "Rust": 16,
+          "Healthy Leaf": 1,
+          "Botrytis Leaf Blight": 0,
+          "Downy Mildew": 0
+        },
+        "Healthy Leaf": {
+          "Healthy Leaf": 21,
+          "Botrytis Leaf Blight": 1,
+          "Purple Blotch": 0,
+          "Downy Mildew": 0,
+          "Rust": 0
+        }
+      },
+      "n_samples": 110,
+      "n_unknown": 0
+    },
+    "enhanced": {
+      "accuracy": 0.7636,
+      "macro_precision": 0.781,
+      "macro_recall": 0.7636,
+      "macro_f1": 0.7647,
+      "per_class": {
+        "Purple Blotch": {
+          "precision": 0.7619,
+          "recall": 0.7273,
+          "f1": 0.7442,
+          "support": 22
+        },
+        "Botrytis Leaf Blight": {
+          "precision": 0.72,
+          "recall": 0.8182,
+          "f1": 0.766,
+          "support": 22
+        },
+        "Downy Mildew": {
+          "precision": 0.5833,
+          "recall": 0.6364,
+          "f1": 0.6087,
+          "support": 22
+        },
+        "Rust": {
+          "precision": 1.0,
+          "recall": 0.6818,
+          "f1": 0.8108,
+          "support": 22
+        },
+        "Healthy Leaf": {
+          "precision": 0.84,
+          "recall": 0.9545,
+          "f1": 0.8936,
+          "support": 22
+        }
+      },
+      "confusion_matrix": {
+        "Purple Blotch": {
+          "Purple Blotch": 16,
+          "Downy Mildew": 4,
+          "Botrytis Leaf Blight": 2,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Botrytis Leaf Blight": {
+          "Botrytis Leaf Blight": 18,
+          "Downy Mildew": 4,
+          "Purple Blotch": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Downy Mildew": {
+          "Purple Blotch": 2,
+          "Botrytis Leaf Blight": 3,
+          "Healthy Leaf": 3,
+          "Downy Mildew": 14,
+          "Rust": 0
+        },
+        "Rust": {
+          "Purple Blotch": 3,
+          "Rust": 15,
+          "Downy Mildew": 2,
+          "Healthy Leaf": 1,
+          "Botrytis Leaf Blight": 1
+        },
+        "Healthy Leaf": {
+          "Healthy Leaf": 21,
+          "Botrytis Leaf Blight": 1,
+          "Purple Blotch": 0,
+          "Downy Mildew": 0,
+          "Rust": 0
+        }
+      },
+      "n_samples": 110,
+      "n_unknown": 0
+    },
+    "enhanced_v2": {
+      "accuracy": 0.7182,
+      "macro_precision": 0.7553,
+      "macro_recall": 0.7182,
+      "macro_f1": 0.7171,
+      "per_class": {
+        "Purple Blotch": {
+          "precision": 0.7368,
+          "recall": 0.6364,
+          "f1": 0.6829,
+          "support": 22
+        },
+        "Botrytis Leaf Blight": {
+          "precision": 0.6129,
+          "recall": 0.8636,
+          "f1": 0.717,
+          "support": 22
+        },
+        "Downy Mildew": {
+          "precision": 0.619,
+          "recall": 0.5909,
+          "f1": 0.6047,
+          "support": 22
+        },
+        "Rust": {
+          "precision": 1.0,
+          "recall": 0.5455,
+          "f1": 0.7059,
+          "support": 22
+        },
+        "Healthy Leaf": {
+          "precision": 0.8077,
+          "recall": 0.9545,
+          "f1": 0.875,
+          "support": 22
+        }
+      },
+      "confusion_matrix": {
+        "Purple Blotch": {
+          "Purple Blotch": 14,
+          "Healthy Leaf": 1,
+          "Botrytis Leaf Blight": 4,
+          "Downy Mildew": 2,
+          "UNKNOWN": 1,
+          "Rust": 0
+        },
+        "Botrytis Leaf Blight": {
+          "Botrytis Leaf Blight": 19,
+          "Downy Mildew": 3,
+          "Purple Blotch": 0,
+          "Rust": 0,
+          "Healthy Leaf": 0
+        },
+        "Downy Mildew": {
+          "Purple Blotch": 3,
+          "Botrytis Leaf Blight": 4,
+          "Healthy Leaf": 2,
+          "Downy Mildew": 13,
+          "Rust": 0
+        },
+        "Rust": {
+          "Purple Blotch": 2,
+          "Rust": 12,
+          "Downy Mildew": 3,
+          "Healthy Leaf": 2,
+          "Botrytis Leaf Blight": 3
+        },
+        "Healthy Leaf": {
+          "Healthy Leaf": 21,
+          "Botrytis Leaf Blight": 1,
+          "Purple Blotch": 0,
+          "Downy Mildew": 0,
+          "Rust": 0
+        }
+      },
+      "n_samples": 110,
+      "n_unknown": 1
+    }
+  }
+}

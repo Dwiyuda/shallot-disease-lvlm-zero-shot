@@ -1,0 +1,12 @@
+# Rahasia
+.env
+
+# Environment
+venv/
+__pycache__/
+*.pyc
+
+# Model cache (besar)
+*.safetensors
+.venv/
+.ipynb_checkpoints/

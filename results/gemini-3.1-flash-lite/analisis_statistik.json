@@ -1,0 +1,172 @@
+{
+  "n_samples": 80,
+  "mcnemar": {
+    "direct vs cot": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 4,
+      "p": 0.6875,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "direct vs structured": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 4,
+      "p": 0.6875,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "direct vs enhanced": {
+      "hanya_menang_A": 1,
+      "hanya_menang_B": 4,
+      "p": 0.375,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "direct vs enhanced_v2": {
+      "hanya_menang_A": 1,
+      "hanya_menang_B": 5,
+      "p": 0.21875,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "cot vs structured": {
+      "hanya_menang_A": 3,
+      "hanya_menang_B": 3,
+      "p": 1.0,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "cot vs enhanced": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 3,
+      "p": 1.0,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "cot vs enhanced_v2": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 4,
+      "p": 0.6875,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "structured vs enhanced": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 3,
+      "p": 1.0,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "structured vs enhanced_v2": {
+      "hanya_menang_A": 2,
+      "hanya_menang_B": 4,
+      "p": 0.6875,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    },
+    "enhanced vs enhanced_v2": {
+      "hanya_menang_A": 1,
+      "hanya_menang_B": 2,
+      "p": 1.0,
+      "p_holm": 1.0,
+      "signifikan_5persen": false
+    }
+  },
+  "latensi": {
+    "direct": {
+      "detik_rata2": 1.96,
+      "detik_median": 1.6,
+      "detik_total": 157.0,
+      "panjang_raw_rata2": 270
+    },
+    "cot": {
+      "detik_rata2": 2.85,
+      "detik_median": 2.45,
+      "detik_total": 228.2,
+      "panjang_raw_rata2": 1404
+    },
+    "structured": {
+      "detik_rata2": 1.73,
+      "detik_median": 1.4,
+      "detik_total": 138.4,
+      "panjang_raw_rata2": 177
+    },
+    "enhanced": {
+      "detik_rata2": 1.65,
+      "detik_median": 1.4,
+      "detik_total": 131.7,
+      "panjang_raw_rata2": 135
+    },
+    "enhanced_v2": {
+      "detik_rata2": 1.72,
+      "detik_median": 1.4,
+      "detik_total": 137.7,
+      "panjang_raw_rata2": 143
+    }
+  },
+  "stabilitas": {
+    "per_provider": {
+      "direct": {
+        "Google": {
+          "n": 33,
+          "akurasi": 0.8485,
+          "kelas_tidak_terwakili": []
+        },
+        "Google AI Studio": {
+          "n": 47,
+          "akurasi": 0.7234,
+          "kelas_tidak_terwakili": []
+        }
+      },
+      "cot": {
+        "Google": {
+          "n": 39,
+          "akurasi": 0.8205,
+          "kelas_tidak_terwakili": []
+        },
+        "Google AI Studio": {
+          "n": 41,
+          "akurasi": 0.7805,
+          "kelas_tidak_terwakili": []
+        }
+      },
+      "structured": {
+        "Google": {
+          "n": 36,
+          "akurasi": 0.8333,
+          "kelas_tidak_terwakili": []
+        },
+        "Google AI Studio": {
+          "n": 44,
+          "akurasi": 0.7727,
+          "kelas_tidak_terwakili": []
+        }
+      },
+      "enhanced": {
+        "Google": {
+          "n": 40,
+          "akurasi": 0.75,
+          "kelas_tidak_terwakili": []
+        },
+        "Google AI Studio": {
+          "n": 40,
+          "akurasi": 0.875,
+          "kelas_tidak_terwakili": []
+        }
+      },
+      "enhanced_v2": {
+        "Google": {
+          "n": 42,
+          "akurasi": 0.7857,
+          "kelas_tidak_terwakili": []
+        },
+        "Google AI Studio": {
+          "n": 38,
+          "akurasi": 0.8684,
+          "kelas_tidak_terwakili": []
+        }
+      }
+    },
+    "antar_run": {}
+  }
+}
