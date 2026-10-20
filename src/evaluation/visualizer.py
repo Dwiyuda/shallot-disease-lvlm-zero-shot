@@ -1,5 +1,5 @@
 """
-Visualisasi hasil evaluasi untuk Bab IV penelitian.
+Visualisasi hasil evaluasi.
 Baca results/<nama-model>/metrics.json → hasilkan PNG:
   - confusion matrix per prompt
   - bar chart perbandingan accuracy & macro-F1 antar prompt

@@ -1,5 +1,5 @@
 """
-Grafik perbandingan antar model untuk Bab IV. TIDAK memanggil API — semua
+Grafik perbandingan antar model. TIDAK memanggil API — semua
 angka dibaca dari results/<nama-model>/metrics.json yang sudah ada.
 
 Semua grafik memakai split TEST (held-out). Dev sengaja tidak dipakai karena

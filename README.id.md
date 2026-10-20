@@ -133,7 +133,7 @@ Salin `.env.example` menjadi `.env`, lalu isi `OPENROUTER_API_KEY`
 | `python dedup_report.py` | Hitung metrik dev/test dari CSV | 0 |
 | `python analisis_statistik.py` | McNemar, latensi, stabilitas provider | 0 |
 | `python uji_model.py` | Saring kandidat model di split dev | 30 x model x prompt |
-| `python grafik_perbandingan.py` | Grafik antar model untuk Bab IV | 0 |
+| `python grafik_perbandingan.py` | Grafik perbandingan antar model | 0 |
 | `python -m src.evaluation.visualizer` | Regenerasi confusion matrix & grafik | 0 |
 
 Mengganti model — semua skrip mengikuti variabel yang sama, dan hasilnya
@@ -174,7 +174,7 @@ src/
   utils/parser.py                  teks bebas model -> label kelas baku
   preprocessing/image_processor.py load gambar + dedup berbasis hash isi file
   evaluation/metrics.py            accuracy/precision/recall/F1/confusion matrix
-  evaluation/visualizer.py         PNG untuk Bab IV
+  evaluation/visualizer.py         PNG hasil evaluasi
   disease_info.py                  info penyakit statis
   paths.py                         path terpusat + dir_hasil(model)
 
@@ -186,7 +186,7 @@ data/
   duplikat.csv      daftar grup duplikat (bukti/lampiran)
 
 results/
-  perbandingan/                    grafik & tabel antar model (Bab IV)
+  perbandingan/                    grafik & tabel antar model
   perbandingan_model.json          ringkasan penyaringan dev
   <nama-model>/                    satu folder per model yang diuji
     predictions.csv                bukti mentah: prediksi, raw, latensi, provider

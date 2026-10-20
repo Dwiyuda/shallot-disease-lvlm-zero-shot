@@ -1,5 +1,5 @@
 """
-Analisis pendukung Bab IV, dihitung dari CSV prediksi yang sudah ada.
+Analisis statistik pendukung hasil, dihitung dari CSV prediksi yang sudah ada.
 TIDAK memanggil API.
 
 Isi:
